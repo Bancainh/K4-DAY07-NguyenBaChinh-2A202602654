@@ -1,8 +1,8 @@
 # Báo Cáo Cá Nhân — Lab 7: Embedding & Vector Store
 
-**Họ tên:** Nguyễn Bá Chinh  
-**MSSV:** 2A202602654  
-**Nhóm:** TDTU Library  
+**Họ tên:** Nguyễn Bá Chinh
+**MSSV:** 2A202602654
+**Nhóm:** TDTU Library
 **Ngày:** 19/09/2026
 
 > **Nộp 1 bản / sinh viên.** Phần nhóm được trình bày trong `REPORT_NHOM.md`.
@@ -45,18 +45,18 @@ Công thức:
 
 Thay số:
 
-`ceil((10000 - 50) / (500 - 50))`  
-`= ceil(9950 / 450)`  
-`= ceil(22.11...)`  
+`ceil((10000 - 50) / (500 - 50))`
+`= ceil(9950 / 450)`
+`= ceil(22.11...)`
 `= 23`
 
 **Đáp án: 23 chunks.**
 
 **Nếu overlap tăng lên 100, số lượng chunk thay đổi thế nào? Tại sao muốn overlap nhiều hơn?**
 
-`ceil((10000 - 100) / (500 - 100))`  
-`= ceil(9900 / 400)`  
-`= ceil(24.75)`  
+`ceil((10000 - 100) / (500 - 100))`
+`= ceil(9900 / 400)`
+`= ceil(24.75)`
 `= 25 chunks`
 
 Khi overlap tăng từ 50 lên 100, số chunk tăng từ 23 lên 25. Overlap lớn hơn giúp giữ lại nhiều ngữ cảnh ở ranh giới giữa hai chunk và giảm nguy cơ thông tin quan trọng bị chia tách, nhưng đồng thời làm tăng số chunk và chi phí embedding.
