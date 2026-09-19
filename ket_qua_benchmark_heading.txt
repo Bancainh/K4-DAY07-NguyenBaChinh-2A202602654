@@ -1,0 +1,181 @@
+======================================================================
+TDTU LIBRARY BENCHMARK
+Strategy: heading
+Total chunks: 41
+======================================================================
+
+QUERY 1: For undergraduate students, how long is the loan period for circulating materials, and how many renewals are allowed?
+Gold answer: 5 days; one renewal for an additional 5 days.
+Gold document: student-borrowing-policy
+Metadata filter: None
+  Top-1
+    doc_id: student-borrowing-policy
+    audience: student
+    chunk_index: 3
+    score: 0.712808
+    content: ### Circulating Materials - Maximum: 2 items. - Loan period: 5 days. - Renewal: one additional 5-day period.
+
+  Top-2
+    doc_id: student-borrowing-policy
+    audience: student
+    chunk_index: 2
+    score: 0.649662
+    content: ### Non-circulating Materials - Maximum: 2 items. - Loan period: 1 day, within library opening hours. - Renewal: not available.
+
+  Top-3
+    doc_id: renewal-guide
+    audience: all
+    chunk_index: 0
+    score: 0.636124
+    content: # Renew Library Materials  Renewal extends the borrowing period of checked-out materials. The number of additional days depends on the circulation policy for the relevant user group.
+
+Relevant chunk rank: 1
+Relevant in Top-3: YES
+----------------------------------------------------------------------
+
+QUERY 2: Under what conditions is renewal not allowed?
+Gold answer: Renewal is not allowed when the material is overdue or another user has placed a hold request.
+Gold document: renewal-guide
+Metadata filter: None
+  Top-1
+    doc_id: renewal-guide
+    audience: all
+    chunk_index: 3
+    score: 0.644599
+    content: ## When Renewal Is Not Allowed Renewal is not available when: - the material is already overdue; or - another user has placed a hold request on the material.
+
+  Top-2
+    doc_id: student-borrowing-policy
+    audience: student
+    chunk_index: 4
+    score: 0.594872
+    content: ## Renewal Items can be renewed only while they are on loan, are not overdue, and have not been requested by another user. Renewal is completed online through the Library Information Portal.
+
+  Top-3
+    doc_id: renewal-guide
+    audience: all
+    chunk_index: 0
+    score: 0.558073
+    content: # Renew Library Materials  Renewal extends the borrowing period of checked-out materials. The number of additional days depends on the circulation policy for the relevant user group.
+
+Relevant chunk rank: 1
+Relevant in Top-3: YES
+----------------------------------------------------------------------
+
+QUERY 3: How can a user cancel a library room booking?
+Gold answer: By phone, email, Facebook, or by contacting staff at a Service Desk or Information Desk.
+Gold document: reserve-a-room
+Metadata filter: None
+  Top-1
+    doc_id: reserve-a-room
+    audience: all
+    chunk_index: 1
+    score: 0.852918
+    content: ## Booking and Cancellation Library rooms are booked through the Library's room-booking service. To cancel, users may contact the Library by phone, email, Facebook, or speak with staff at a Service Desk/Information Desk.
+
+  Top-2
+    doc_id: library-card-account
+    audience: all
+    chunk_index: 0
+    score: 0.539823
+    content: # Library Card & Account
+
+  Top-3
+    doc_id: library-card-account
+    audience: all
+    chunk_index: 2
+    score: 0.477809
+    content: ### Undergraduate Students Library-card support is handled by the Department of Student Affairs, Room A0003, Building A. Contact: (028) 37 755 054; studentaffairs@tdtu.edu.vn.
+
+Relevant chunk rank: 1
+Relevant in Top-3: YES
+----------------------------------------------------------------------
+
+QUERY 4: Which credentials are used to sign in to the Library Portal?
+Gold answer: The same credentials as the Student Information Portal or Lecturer/Staff Information Portal.
+Gold document: library-card-account
+Metadata filter: None
+  Top-1
+    doc_id: library-card-account
+    audience: all
+    chunk_index: 5
+    score: 0.740017
+    content: ## Library Portal Account The Library Portal uses the same credentials as the Student Information Portal or Lecturer/Staff Information Portal.
+
+  Top-2
+    doc_id: professional-staff-services
+    audience: staff
+    chunk_index: 1
+    score: 0.642494
+    content: ## Essential Guides Academic and professional staff can access guidance on Library Card & Account information, library orientation, intellectual-property and copyright rules, and FAQs.
+
+  Top-3
+    doc_id: library-card-account
+    audience: all
+    chunk_index: 0
+    score: 0.626174
+    content: # Library Card & Account
+
+Relevant chunk rank: 1
+Relevant in Top-3: YES
+----------------------------------------------------------------------
+
+QUERY 5: What course-related support resources are available?
+Gold answer: For students: course readings, subject guides, and required reading lists by course.
+Gold document: undergraduate-student-services
+Metadata filter: {'audience': 'student'}
+  Top-1
+    doc_id: undergraduate-student-services
+    audience: student
+    chunk_index: 4
+    score: 0.667442
+    content: ## Learning Support Support includes: - course readings; - subject guides; - required reading lists by course.
+
+  Top-2
+    doc_id: undergraduate-student-services
+    audience: student
+    chunk_index: 0
+    score: 0.584675
+    content: # Services for TDTU Undergraduate Students
+
+  Top-3
+    doc_id: undergraduate-student-services
+    audience: student
+    chunk_index: 5
+    score: 0.570286
+    content: ## Research Support Students can use research-support services, research guides, and research tools.
+
+Relevant chunk rank: 1
+Relevant in Top-3: YES
+
+--- A/B TEST: WITHOUT METADATA FILTER ---
+  Top-1
+    doc_id: professional-staff-services
+    audience: staff
+    chunk_index: 4
+    score: 0.693937
+    content: ## Teaching Support Teaching-related support includes course reserves, information-supply services, subject guides, and customized library tutorials for students.
+
+  Top-2
+    doc_id: undergraduate-student-services
+    audience: student
+    chunk_index: 4
+    score: 0.667442
+    content: ## Learning Support Support includes: - course readings; - subject guides; - required reading lists by course.
+
+  Top-3
+    doc_id: undergraduate-student-services
+    audience: student
+    chunk_index: 0
+    score: 0.584675
+    content: # Services for TDTU Undergraduate Students
+
+Relevant rank without filter: 2
+--- END A/B TEST ---
+----------------------------------------------------------------------
+
+======================================================================
+Relevant Top-3: 5/5
+Retrieval-only score: 10/10
+NOTE: This score evaluates retrieval only. The official rubric also considers agent-answer correctness.
+======================================================================

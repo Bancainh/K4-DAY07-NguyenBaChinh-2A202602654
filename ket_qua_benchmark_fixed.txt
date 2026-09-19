@@ -1,0 +1,181 @@
+======================================================================
+TDTU LIBRARY BENCHMARK
+Strategy: fixed
+Total chunks: 16
+======================================================================
+
+QUERY 1: For undergraduate students, how long is the loan period for circulating materials, and how many renewals are allowed?
+Gold answer: 5 days; one renewal for an additional 5 days.
+Gold document: student-borrowing-policy
+Metadata filter: None
+  Top-1
+    doc_id: student-borrowing-policy
+    audience: student
+    chunk_index: 0
+    score: 0.783883
+    content: # Undergraduate Student - Circulation Service  ## Loan Periods  ### Non-circulating Materials - Maximum: 2 items. - Loan period: 1 day, within library opening hours. - Renewal: not available.  ### Circulating Materials - Maximum: 2 items. - Loan period: 5 days. - Renewal: one additional 5-day period
+
+  Top-2
+    doc_id: renewal-guide
+    audience: all
+    chunk_index: 0
+    score: 0.641651
+    content: # Renew Library Materials  Renewal extends the borrowing period of checked-out materials. The number of additional days depends on the circulation policy for the relevant user group.  ## Ways to Renew - Use the Library Portal renewal function. - Contact the Library by phone at (083) 775 5057. - Cont
+
+  Top-3
+    doc_id: renewal-guide
+    audience: all
+    chunk_index: 1
+    score: 0.558189
+    content: te students and for lecturers, researchers, and staff.  ## When Renewal Is Not Allowed Renewal is not available when: - the material is already overdue; or - another user has placed a hold request on the material.
+
+Relevant chunk rank: 1
+Relevant in Top-3: YES
+----------------------------------------------------------------------
+
+QUERY 2: Under what conditions is renewal not allowed?
+Gold answer: Renewal is not allowed when the material is overdue or another user has placed a hold request.
+Gold document: renewal-guide
+Metadata filter: None
+  Top-1
+    doc_id: renewal-guide
+    audience: all
+    chunk_index: 1
+    score: 0.664599
+    content: te students and for lecturers, researchers, and staff.  ## When Renewal Is Not Allowed Renewal is not available when: - the material is already overdue; or - another user has placed a hold request on the material.
+
+  Top-2
+    doc_id: student-borrowing-policy
+    audience: student
+    chunk_index: 0
+    score: 0.511565
+    content: # Undergraduate Student - Circulation Service  ## Loan Periods  ### Non-circulating Materials - Maximum: 2 items. - Loan period: 1 day, within library opening hours. - Renewal: not available.  ### Circulating Materials - Maximum: 2 items. - Loan period: 5 days. - Renewal: one additional 5-day period
+
+  Top-3
+    doc_id: renewal-guide
+    audience: all
+    chunk_index: 0
+    score: 0.503453
+    content: # Renew Library Materials  Renewal extends the borrowing period of checked-out materials. The number of additional days depends on the circulation policy for the relevant user group.  ## Ways to Renew - Use the Library Portal renewal function. - Contact the Library by phone at (083) 775 5057. - Cont
+
+Relevant chunk rank: 1
+Relevant in Top-3: YES
+----------------------------------------------------------------------
+
+QUERY 3: How can a user cancel a library room booking?
+Gold answer: By phone, email, Facebook, or by contacting staff at a Service Desk or Information Desk.
+Gold document: reserve-a-room
+Metadata filter: None
+  Top-1
+    doc_id: reserve-a-room
+    audience: all
+    chunk_index: 0
+    score: 0.852233
+    content: # Reserve a Room  ## Booking and Cancellation Library rooms are booked through the Library's room-booking service. To cancel, users may contact the Library by phone, email, Facebook, or speak with staff at a Service Desk/Information Desk.  ## Usage Time - Group Study, Presentation, Video, and Indivi
+
+  Top-2
+    doc_id: student-borrowing-policy
+    audience: student
+    chunk_index: 2
+    score: 0.520275
+    content:  borrower. After receiving a campus-email pickup notice, the reserved item is collected at the first-floor Service Desk and is held for 1 day.  ## Borrower's Responsibilities Borrowers must care for materials, keep their library card private, report a lost card, monitor due dates, and return materia
+
+  Top-3
+    doc_id: reserve-a-room
+    audience: all
+    chunk_index: 1
+    score: 0.494434
+    content: For Group Study, Presentation, Video, and Individual Study Rooms, an extension is possible when no reservation is waiting.  ## Fees Room-specific charges are shown in the booking interface under Room Details.  ## Students Using Temporary Cards Students who completed library training can book online 
+
+Relevant chunk rank: 1
+Relevant in Top-3: YES
+----------------------------------------------------------------------
+
+QUERY 4: Which credentials are used to sign in to the Library Portal?
+Gold answer: The same credentials as the Student Information Portal or Lecturer/Staff Information Portal.
+Gold document: library-card-account
+Metadata filter: None
+  Top-1
+    doc_id: library-card-account
+    audience: all
+    chunk_index: 2
+    score: 0.580207
+    content: u.edu.vn.  ### Lecturers and Staff Users who already have a staff portal account but lack Library Portal access should contact INSPiRE Library. Users without a staff portal account should contact the Department for Personnel & Administrative Affairs.
+
+  Top-2
+    doc_id: professional-staff-services
+    audience: staff
+    chunk_index: 0
+    score: 0.533509
+    content: # Services for TDTU Academic and Professional Staff  ## Essential Guides Academic and professional staff can access guidance on Library Card & Account information, library orientation, intellectual-property and copyright rules, and FAQs.  ## Borrowing Materials Available services include borrowing l
+
+  Top-3
+    doc_id: professional-staff-services
+    audience: staff
+    chunk_index: 2
+    score: 0.532659
+    content:  spaces and facilities, Studio access, IT support, new-arrival information, and library-visit registration.
+
+Relevant chunk rank: NOT FOUND
+Relevant in Top-3: NO
+----------------------------------------------------------------------
+
+QUERY 5: What course-related support resources are available?
+Gold answer: For students: course readings, subject guides, and required reading lists by course.
+Gold document: undergraduate-student-services
+Metadata filter: {'audience': 'student'}
+  Top-1
+    doc_id: undergraduate-student-services
+    audience: student
+    chunk_index: 1
+    score: 0.667969
+    content:  for personal use.  ## Learning Support Support includes: - course readings; - subject guides; - required reading lists by course.  ## Research Support Students can use research-support services, research guides, and research tools.  ## Other Services Additional services include instruction and info
+
+  Top-2
+    doc_id: undergraduate-student-services
+    audience: student
+    chunk_index: 0
+    score: 0.525014
+    content: # Services for TDTU Undergraduate Students  ## Essential Guides Undergraduate students can access guidance on: - Library Card & Account information. - Library Orientation sessions. - Vietnam intellectual-property law and copyright. - Frequently Asked Questions.  ## Borrowing Materials Services inclu
+
+  Top-3
+    doc_id: student-borrowing-policy
+    audience: student
+    chunk_index: 0
+    score: 0.253430
+    content: # Undergraduate Student - Circulation Service  ## Loan Periods  ### Non-circulating Materials - Maximum: 2 items. - Loan period: 1 day, within library opening hours. - Renewal: not available.  ### Circulating Materials - Maximum: 2 items. - Loan period: 5 days. - Renewal: one additional 5-day period
+
+Relevant chunk rank: 1
+Relevant in Top-3: YES
+
+--- A/B TEST: WITHOUT METADATA FILTER ---
+  Top-1
+    doc_id: professional-staff-services
+    audience: staff
+    chunk_index: 1
+    score: 0.688083
+    content:  personal use.  ## Teaching Support Teaching-related support includes course reserves, information-supply services, subject guides, and customized library tutorials for students.  ## Research Support Research support includes dedicated research services, research guides, research tools, and guidance
+
+  Top-2
+    doc_id: undergraduate-student-services
+    audience: student
+    chunk_index: 1
+    score: 0.667969
+    content:  for personal use.  ## Learning Support Support includes: - course readings; - subject guides; - required reading lists by course.  ## Research Support Students can use research-support services, research guides, and research tools.  ## Other Services Additional services include instruction and info
+
+  Top-3
+    doc_id: undergraduate-student-services
+    audience: student
+    chunk_index: 0
+    score: 0.525014
+    content: # Services for TDTU Undergraduate Students  ## Essential Guides Undergraduate students can access guidance on: - Library Card & Account information. - Library Orientation sessions. - Vietnam intellectual-property law and copyright. - Frequently Asked Questions.  ## Borrowing Materials Services inclu
+
+Relevant rank without filter: 2
+--- END A/B TEST ---
+----------------------------------------------------------------------
+
+======================================================================
+Relevant Top-3: 4/5
+Retrieval-only score: 8/10
+NOTE: This score evaluates retrieval only. The official rubric also considers agent-answer correctness.
+======================================================================
