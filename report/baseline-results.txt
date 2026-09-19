@@ -1,0 +1,15 @@
+
+=== student-borrowing-policy.md ===
+fixed_size      | count= 3 | avg_length=447.00
+by_sentences    | count= 5 | avg_length=246.20
+recursive       | count= 3 | avg_length=413.67
+
+=== reserve-a-room.md ===
+fixed_size      | count= 3 | avg_length=376.33
+by_sentences    | count= 3 | avg_length=340.33
+recursive       | count= 3 | avg_length=343.00
+
+=== undergraduate-student-services.md ===
+fixed_size      | count= 2 | avg_length=478.50
+by_sentences    | count= 3 | avg_length=299.67
+recursive       | count= 2 | avg_length=453.50
