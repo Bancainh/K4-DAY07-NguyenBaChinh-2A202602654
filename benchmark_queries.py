@@ -46,14 +46,14 @@ BENCHMARKS = [
         "must_contain": "same credentials",
     },
     {
-        "id": 5,
-        "query": "What support services are available?",
-        "gold_answer": (
-            "For students: course readings, subject guides, "
-            "and required reading lists by course."
-        ),
-        "metadata_filter": {"audience": "student"},
-        "source_doc": "undergraduate-student-services",
-        "must_contain": "course readings",
+    "id": 5,
+    "query": "What course-related support resources are available?",
+    "gold_answer": (
+        "For students: course readings, subject guides, "
+        "and required reading lists by course."
+    ),
+    "metadata_filter": {"audience": "student"},
+    "source_doc": "undergraduate-student-services",
+    "must_contain": "course readings",
     },
 ]

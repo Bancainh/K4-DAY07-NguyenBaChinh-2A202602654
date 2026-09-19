@@ -1,0 +1,45 @@
+======================================================================
+AGENT BENCHMARK - FIXED SIZE
+======================================================================
+
+QUERY 1: For undergraduate students, how long is the loan period for circulating materials, and how many renewals are allowed?
+GOLD: 5 days; one renewal for an additional 5 days.
+FILTER: None
+AGENT ANSWER:
+Đối với sinh viên đại học, thời gian mượn tài liệu lưu hành là 5 ngày [1].
+Sinh viên được phép gia hạn một lần, mỗi lần gia hạn thêm 5 ngày [1].
+----------------------------------------------------------------------
+
+QUERY 2: Under what conditions is renewal not allowed?
+GOLD: Renewal is not allowed when the material is overdue or another user has placed a hold request.
+FILTER: None
+AGENT ANSWER:
+Việc gia hạn không được phép khi:
+*   tài liệu đã quá hạn [1], [2].
+*   người dùng khác đã đặt yêu cầu giữ tài liệu [1], [2].
+*   tài liệu là tài liệu không lưu hành (Non-circulating Materials) [2].
+----------------------------------------------------------------------
+
+QUERY 3: How can a user cancel a library room booking?
+GOLD: By phone, email, Facebook, or by contacting staff at a Service Desk or Information Desk.
+FILTER: None
+AGENT ANSWER:
+Để hủy đặt phòng thư viện, người dùng có thể liên hệ với Thư viện qua điện thoại, email, Facebook, hoặc nói chuyện trực tiếp với nhân viên tại Bàn Dịch vụ/Bàn Thông tin [1].
+----------------------------------------------------------------------
+
+QUERY 4: Which credentials are used to sign in to the Library Portal?
+GOLD: The same credentials as the Student Information Portal or Lecturer/Staff Information Portal.
+FILTER: None
+AGENT ANSWER:
+Ngữ cảnh chưa đủ thông tin để trả lời câu hỏi này. Thông tin trong ngữ cảnh [1] chỉ đề cập đến việc người dùng có tài khoản cổng thông tin nhân viên (staff portal account) nhưng thiếu quyền truy cập Cổng thư viện (Library Portal) nên liên hệ Thư viện INSPiRE, hoặc liên hệ Phòng Tổ chức Cán bộ nếu chưa có tài khoản cổng thông tin nhân viên. Tuy nhiên, nó không nói rõ những thông tin đăng nhập cụ thể nào được sử dụng để đăng nhập vào Cổng thư viện.
+----------------------------------------------------------------------
+
+QUERY 5: What course-related support resources are available?
+GOLD: For students: course readings, subject guides, and required reading lists by course.
+FILTER: {'audience': 'student'}
+AGENT ANSWER:
+Các tài nguyên hỗ trợ liên quan đến khóa học bao gồm:
+*   Tài liệu đọc của khóa học [1]
+*   Hướng dẫn chủ đề [1]
+*   Danh sách tài liệu đọc bắt buộc theo khóa học [1]
+----------------------------------------------------------------------
